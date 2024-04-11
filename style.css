@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background-color: #3B4664;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#calculator {
+    max-width: 360px;
+    overflow: hidden;
+}
+
+#calc {
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-family: inter;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+#display {
+    width: 100%;
+    padding: 30px;
+    background-color: #181F32;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    box-sizing: border-box;
+    font-size: 2rem;
+    text-align: right;
+    color: #ffffff;
+    font-family: inter;
+    font-weight: 700;
+}
+
+#keyboard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 15px;
+    gap: 10px;
+    row-gap: 20px;
+    padding: 25px 25px 20px 25px;
+    background-color: #252D44;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+button {
+    width: 65px;
+    height: 40px;
+    border-radius: 12px;
+    border: none;
+    background-color: hsl(32, 26%, 89%);
+    color: #3B4664;
+    font-family: inter;
+    font-weight: 800;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+button:hover {
+    background-color: hsl(32, 26% ,75%);
+}
+button:active {
+    background-color: hsl(32, 26% ,60%);
+}
+
+#re-cal {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #252E46;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+#re-button {
+    margin-left: 18px;
+    margin-bottom: 25px;
+    width: 145px;
+    background-color: hsl(224, 21%, 50%);
+    color: #ffffff;
+    font-size: 1rem;
+}
+#re-button:hover {
+    background-color: hsl(224, 21%, 60%);
+} 
+#re-button:active {
+    background-color: hsl(224, 21%, 70%);
+}
+
+#cal-button {
+    margin-right: 20px;
+    margin-bottom: 25px;
+    width: 145px;
+    background-color: hsl(6, 60%, 50%);
+    color: #ffffff;
+    font-size: 1rem;
+}
+#cal-button:hover {
+    background-color: hsl(6, 64%, 60%);
+}
+#cal-button:active {
+    background-color: hsl(6, 64%, 70%);
+}
+
+#del-button {
+    background-color: hsl(224, 21%, 50%);
+    color: #ffffff;
+    font-size: 1rem;
+}
+#del-button:hover {
+    background-color: hsl(224, 21%, 60%);
+}
+#del-button:active {
+    background-color: hsl(224, 21%, 70%);
+}

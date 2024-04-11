@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Micro-Project3-Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="calculator">
+        <div id="calc">
+        <p>calc</p>
+        </div>
+    <input id="display" randonly placeholder="0">
+    <div id="keyboard">
+        <button onclick="addToDisplay('7')">7</button>
+        <button onclick="addToDisplay('8')">8</button>
+        <button onclick="addToDisplay('9')">9</button>
+        <button onclick="deleteFromDisplay()" id="del-button">DEL</button>
+        <button onclick="addToDisplay('4')">4</button>
+        <button onclick="addToDisplay('5')">5</button>
+        <button onclick="addToDisplay('6')">6</button>
+        <button onclick="addToDisplay('+')">+</button>
+        <button onclick="addToDisplay('1')">1</button>
+        <button onclick="addToDisplay('2')">2</button>
+        <button onclick="addToDisplay('3')">3</button>
+        <button onclick="addToDisplay('-')">-</button>
+        <button onclick="addToDisplay('.')">.</button>
+        <button onclick="addToDisplay('0')">0</button>
+        <button onclick="addToDisplay('/')">/</button>
+        <button onclick="addToDisplay('x')">x</button>
+    </div>
+    <div id="re-cal">
+        <button onclick="clearDisplay()" id="re-button">RESET</button>
+        <button onclick="calculate()" id="cal-button">=</button>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
